@@ -8,3 +8,6 @@ def is_min_heap(arr):
         if 2 * i + 2 < n and arr[i] > arr[2 * i + 2]:
             return False
     return True
+
+def is_max_heap(arr):
+    n = len(arr)
