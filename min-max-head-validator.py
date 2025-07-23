@@ -13,11 +13,14 @@ def is_min_heap(arr):
             return False  # Violates min-heap property
     return True  # If no violations found, it's a valid min heap
 
+# Function to check if a given list represents a max heap
 def is_max_heap(arr):
-    n = len(arr)
+    n = len(arr)  # Get the number of elements in the array
+    # Iterate through all non-leaf parent nodes
     for i in range((n - 2) // 2 + 1):
+        # Check if the left child exists and is greater than the parent
         if 2 * i + 1 < n and arr[i] < arr[2 * i + 1]:
-            return False
+            return False  # Violates max-heap property
         if 2 * i + 2 < n and arr[i] < arr[2 * i + 2]:
             return False
     return True
