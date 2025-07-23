@@ -27,11 +27,12 @@ def is_max_heap(arr):
     return True  # If no violations found, it's a valid max heap
 
 
+# Main function to test the heap-checking logic
 def main():
-    A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    B = [11, 9, 7, 5, 3, 1, -1, -3, -5, -7]
-    C = [6, 7, 8, 9, 10, 1, 2, 3, 4, 5]
-
+    # Define three arrays to test
+    A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]              # Expected: Min heap
+    B = [11, 9, 7, 5, 3, 1, -1, -3, -5, -7]          # Expected: Max heap
+    C = [6, 7, 8, 9, 10, 1, 2, 3, 4, 5]              # Expected: Neither
 
     for label, arr in zip(['A', 'B', 'C'], [A, B, C]):
         if is_min_heap(arr):
