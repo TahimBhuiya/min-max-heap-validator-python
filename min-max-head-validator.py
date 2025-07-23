@@ -32,3 +32,6 @@ def main():
             print(f"Array {label} is a max heap.")
         else:
             print(f"Array {label} is neither a max heap nor a min heap.")
+
+if __name__ == "__main__":
+    main()
