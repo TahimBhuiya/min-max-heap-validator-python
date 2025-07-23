@@ -8,9 +8,10 @@ def is_min_heap(arr):
         # Check if the left child exists and is smaller than the parent
         if 2 * i + 1 < n and arr[i] > arr[2 * i + 1]:
             return False  # Violates min-heap property
+         # Check if the right child exists and is smaller than the parent
         if 2 * i + 2 < n and arr[i] > arr[2 * i + 2]:
-            return False
-    return True
+            return False  # Violates min-heap property
+    return True  # If no violations found, it's a valid min heap
 
 def is_max_heap(arr):
     n = len(arr)
