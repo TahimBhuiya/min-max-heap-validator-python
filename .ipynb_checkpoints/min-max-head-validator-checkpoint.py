@@ -21,9 +21,10 @@ def is_max_heap(arr):
         # Check if the left child exists and is greater than the parent
         if 2 * i + 1 < n and arr[i] < arr[2 * i + 1]:
             return False  # Violates max-heap property
+        # Check if the right child exists and is greater than the parent
         if 2 * i + 2 < n and arr[i] < arr[2 * i + 2]:
-            return False
-    return True
+            return False  # Violates max-heap property
+    return True  # If no violations found, it's a valid max heap
 
 
 def main():
