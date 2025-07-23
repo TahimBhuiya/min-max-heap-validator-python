@@ -34,6 +34,7 @@ def main():
     B = [11, 9, 7, 5, 3, 1, -1, -3, -5, -7]          # Expected: Max heap
     C = [6, 7, 8, 9, 10, 1, 2, 3, 4, 5]              # Expected: Neither
 
+    # Loop through each array and check if it is a min heap, max heap, or neither
     for label, arr in zip(['A', 'B', 'C'], [A, B, C]):
         if is_min_heap(arr):
             print(f"Array {label} is a min heap.")
