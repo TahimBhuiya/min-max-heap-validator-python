@@ -1,10 +1,13 @@
 # Created by Tahim Bhuiya
 
+# Function to check if a given list represents a min heap
 def is_min_heap(arr):
-    n = len(arr)
+    n = len(arr)  # Get the number of elements in the array
+    # Iterate through all non-leaf parent nodes
     for i in range((n - 2) // 2 + 1):
+        # Check if the left child exists and is smaller than the parent
         if 2 * i + 1 < n and arr[i] > arr[2 * i + 1]:
-            return False
+            return False  # Violates min-heap property
         if 2 * i + 2 < n and arr[i] > arr[2 * i + 2]:
             return False
     return True
