@@ -43,5 +43,6 @@ def main():
         else:
             print(f"Array {label} is neither a max heap nor a min heap.")
 
+# Entry point of the program
 if __name__ == "__main__":
     main()
